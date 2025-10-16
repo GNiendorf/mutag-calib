@@ -1,0 +1,39 @@
+plotting_style:
+  labels_mc:
+    light: "l"
+    c: "c"
+    b: "b"
+
+  colors_mc:
+    light: CMS_red
+    c: CMS_orange
+    b: CMS_blue
+
+  samples_groups:
+    light:
+      - QCD_MuEnriched__QCD_MuEnriched_l
+      - SingleTop__SingleTop_l
+      - TTto4Q__TTto4Q_l
+      - VJets__VJets_l
+    c:
+      - QCD_MuEnriched__QCD_MuEnriched_c
+      - QCD_MuEnriched__QCD_MuEnriched_cc
+      - SingleTop__SingleTop_c
+      - SingleTop__SingleTop_cc
+      - TTto4Q__TTto4Q_c
+      - TTto4Q__TTto4Q_cc
+      - VJets__VJets_c
+      - VJets__VJets_cc
+    b:
+      - QCD_MuEnriched__QCD_MuEnriched_b
+      - QCD_MuEnriched__QCD_MuEnriched_bb
+      - SingleTop__SingleTop_b
+      - SingleTop__SingleTop_bb
+      - TTto4Q__TTto4Q_b
+      - TTto4Q__TTto4Q_bb
+      - VJets__VJets_b
+      - VJets__VJets_bb
+
+  print_info:
+    category: false
+    year: false

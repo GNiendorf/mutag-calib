@@ -102,10 +102,10 @@ cfg = Configurator(
             "samples": samples,
             "samples_exclude" : [],
             "year": [
-                '2022_preEE',
-                '2022_postEE',
-                '2023_preBPix',
-                '2023_postBPix'
+                '2022_preEE'
+#                '2022_postEE',
+#                '2023_preBPix',
+#                '2023_postBPix'
             ]
         },
         "subsamples": subsamples
