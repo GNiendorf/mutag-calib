@@ -434,6 +434,7 @@ def print_report(successful_categories, failed_categories):
 # Helper function to extract the tau21 string for directory naming
 get_tau21_str = lambda x: f"tau21_{x:.2f}".replace('.', 'p')
 
+
 def main():
     parser = argparse.ArgumentParser(description="Create combine datacards from pocketcoffea output")
     parser.add_argument("input_file", help="Path to the pocketcoffea output .coffea file")
