@@ -38,7 +38,7 @@ parameters = defaults.merge_parameters_from_files(default_parameters,
 #     "DATA_BTagMu"
 # ]
 samples = [
-    "SingleTop"
+    "QCD_MuEnriched"
 ]
 subsamples = {}
 for s in filter(lambda x: 'DATA_BTagMu' not in x, samples):
@@ -105,7 +105,7 @@ cfg = Configurator(
         #           "datasets/DATA_BTagMu_run3_redirector.json",
         #           "datasets/MC_QCD_MuEnriched_run3_redirector.json"
         #           ],
-        "jsons": ["datasets/MC_singletop_run3_2024_redirector.json"
+        "jsons": ["datasets/MC_QCD_MuEnriched_run3_2024_missing_redirector.json"
                   ],
         "filter" : {
             "samples": samples,
