@@ -41,7 +41,7 @@ parameters = defaults.merge_parameters_from_files(default_parameters,
 #     "DATA_BTagMu"
 # ]
 samples = [
-    "QCD_Madgraph"
+    "QCD_MuEnriched"
 ]
 
 subsamples = {}
@@ -155,15 +155,18 @@ cfg = Configurator(
         #           "datasets/MC_TTto4Q_run3_redirector.json",
         #           "datasets/MC_singletop_run3_redirector.json",
         #           "datasets/DATA_BTagMu_run3_redirector.json"],
-        "jsons": ["datasets/MC_QCD_Madgraph_run3_redirector.json"],
+        "jsons": ["datasets/MC_QCD_MuEnriched_run3_2024_missing.json"],
         "filter" : {
             "samples": samples,
             "samples_exclude" : [],
+            # "year": [
+            #     '2022_preEE',
+            #     '2022_postEE',
+            #     '2023_preBPix',
+            #     '2023_postBPix'
+            # ]
             "year": [
-                '2022_preEE',
-                '2022_postEE',
-                '2023_preBPix',
-                '2023_postBPix'
+                '2024'
             ]
         },
         "subsamples": subsamples
@@ -175,7 +178,6 @@ cfg = Configurator(
     skim = [get_nPVgood(1),
             eventFlags,
             goldenJson,
-            hasMatchedGenJet,
             get_nObj_min(1, 200., "FatJet"),
             get_nObj_minmsd(1, 30., "FatJet"),
             get_nObj_min(1, 3., "Muon"),

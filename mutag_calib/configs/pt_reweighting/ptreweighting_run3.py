@@ -105,7 +105,7 @@ cfg = Configurator(
         #           "datasets/DATA_BTagMu_run3_redirector.json",
         #           "datasets/MC_QCD_MuEnriched_run3_redirector.json"
         #           ],
-        "jsons": ["datasets/MC_QCD_MuEnriched_run3_2024_missing_redirector.json"
+        "jsons": ["datasets/MC_QCD_MuEnriched_run3_2024_missing.json"
                   ],
         "filter" : {
             "samples": samples,
