@@ -32,6 +32,14 @@ parameters = defaults.merge_parameters_from_files(default_parameters,
                                                 f"{localdir}/params/plotting_style.yaml",
                                                 update=True)
 
+# samples = [
+#     "QCD_MuEnriched",
+#     "QCD_Madgraph",
+#     "VJets",
+#     "TTto4Q",
+#     "SingleTop",
+#     "DATA_BTagMu"
+# ]
 samples = [
     "QCD_MuEnriched",
     "QCD_Madgraph",
