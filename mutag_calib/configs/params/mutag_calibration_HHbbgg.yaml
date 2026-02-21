@@ -42,6 +42,7 @@ mutag_calibration:
       - [30, 210]
     "2024":
       - [30, 'Inf']
+      - [30, 210]
   wp:
     2022_preEE:
       particleNet_XbbVsQCD:
