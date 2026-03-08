@@ -21,7 +21,8 @@ from pocket_coffea.lib.cut_definition import Cut
 from pocket_coffea.lib.cut_functions import get_nObj_eq, get_nObj_min, get_HLTsel, get_nPVgood, goldenJson, eventFlags
 from pocket_coffea.parameters.cuts import passthrough
 
-from pocket_coffea.lib.calibrators.common.common import JetsCalibrator, JetsSoftdropMassCalibrator
+from pocket_coffea.lib.calibrators.common.common import JetsCalibrator
+from mutag_calib.lib.calibrators import FixedJetsSoftdropMassCalibrator as JetsSoftdropMassCalibrator
 from pocket_coffea.lib.weights.common.common import common_weights
 from pocket_coffea.parameters.histograms import *
 import mutag_calib
@@ -118,9 +119,9 @@ cfg = Configurator(
             "samples_exclude" : [],
             "year": [
                 '2018',
-                #'2017',
-                #'2016_PostVFP',
-                #'2016_PreVFP'
+                '2017',
+                '2016_PostVFP',
+                '2016_PreVFP'
             ]
         },
         "subsamples": subsamples
